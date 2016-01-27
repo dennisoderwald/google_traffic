@@ -32,6 +32,19 @@ https://developers.google.com/maps/documentation/javascript/get-api-key#key
 
 You can run it via "python traffic_times.py to_work" to output times from the "home" variable to the "work" variable in the script, or "python traffic_times.py from_work" for the reverse.
 
+```traffic_times.py [-h] [-tm {best_guess,pessimistic,optimistic,all}] [-d {to_work,from_work}]```
+
+### Arguments
+
+```
+-h, --help              shows this help message and exit
+-tm {best_guess,pessimistic,optimistic,all}, --traffic-model {best_guess,pessimistic,optimistic,all}
+                        traffic model to use
+-d {to_work,from_work}, --direction {to_work,from_work}
+                        direction of travel
+
+```
+
 ### Recommended Setup
 
 I have my crontab setup to run the following:
